@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú | El Santo Chilaquil</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html" style="display: flex; align-items: center;">
+            <img src="img/logooo.jpeg" alt="Logo El Santo Chilaquil">
+        </a>
+        <div>
+            <h1>El Santo Chilaquil</h1>
+            <p>"Despierta bonito, desayuna Chilaquilito"</p>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <div class="section-title">
+        <h2>Nuestro Menú</h2>
+        <p>Explora nuestros productos y atrevete a probarnos.</p>
+    </div>
+
+    <div class="productos-grid">
+        <div class="producto-card">
+            <button class="producto-select" onclick="mostrarProducto('bowl')" type="button">El Santo Bowl</button>
+            <div id="bowl" class="detalle">
+                <div class="imagen-contenedor">
+                    <div id="imagen-bowl" class="producto-imagen" data-producto="bowl">
+                        <span class="producto-nombre">El Santo Bowl</span>
+                        <span class="producto-salsa">Selecciona una salsa</span>
+                    </div>
+                </div>
+                
+                <div class="salsas">
+                    <button type="button" onclick="cambiarSalsa('bowl','Roja')">Roja</button>
+                    <button type="button" onclick="cambiarSalsa('bowl','Verde')">Verde</button>
+                    <button type="button" onclick="cambiarSalsa('bowl','Kids')">Kids</button>
+                </div>
+                <div class="detalle-texto">
+                    <p><strong>Toppings:</strong> Cebolla, crema, queso y cilantro.</p>
+                    <p><strong>Proteína:</strong> Pollo.</p>
+                    <p><strong>Precio:</strong> $90 MXN.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto-card">
+            <button class="producto-select" onclick="mostrarProducto('cajita')" type="button">La Santa Cajita</button>
+            <div id="cajita" class="detalle">
+                <div class="imagen-contenedor">
+                    <div id="imagen-cajita" class="producto-imagen" data-producto="cajita">
+                        <span class="producto-nombre">La Santa Cajita</span>
+                        <span class="producto-salsa">Selecciona una salsa</span>
+                    </div>
+                </div>
+                <div class="salsas">
+                    <button type="button" onclick="cambiarSalsa('cajita','Roja')">Roja</button>
+                    <button type="button" onclick="cambiarSalsa('cajita','Verde')">Verde</button>
+                    <button type="button" onclick="cambiarSalsa('cajita','Kids')">Kids</button>
+                </div>
+                <div class="detalle-texto">
+                    <p><strong>Toppings:</strong> Cebolla, crema, queso y cilantro.</p>
+                    <p><strong>Proteína:</strong> Pollo.</p>
+                    <p><strong>Precio:</strong> $120 MXN.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 El Santo Chilaquil | Real del Valle, Mazatlán</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
